@@ -8,7 +8,7 @@ export const countPercentage = (value: number, sum: number) => {
 };
 
 export const convertPercentageString = (percentage: number) =>
-  " " + Math.round(percentage) + "%";
+  " " + percentage.toFixed(1) + "%";
 
 export const calculateProgressBarAnimation = ({
   percentage,
